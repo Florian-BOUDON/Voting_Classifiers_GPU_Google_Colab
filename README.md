@@ -3,32 +3,29 @@
 ### Présentation du projet
 
 Ce projet a pour objectif de démontrer comment utiliser les capacités de calcul GPU offertes par Google Colab (compte payant) pour construire un Voting Classifier.      
-Ce Voting Classifier est constitué de modèles linéaires et non linéaires, et ses hyperparamètres sont sélectionnés grâce à une recherche de grille (GridSearch).    
+Ce Voting Classifier est constitué de modèles linéaires et non-linéaires, et ses hyperparamètres sont sélectionnés grâce à un GridSearch.    
 Les principales métriques évaluées sont la matrice de confusion, la courbe ROC, l'AUC (Area Under the Curve), la précision (accuracy), et la courbe de seuil de rappel-précision.    
 
 ### Description du dataset
 
-Le jeu de données utilisé pour ce projet est caractérisé par les éléments suivants :
-
 - Le jeu de données est nettoyé : toutes les données manquantes ou aberrantes ont été traitées.
-- Le jeu de données est déséquilibré avec une répartition de 90% pour une classe et 10% pour l'autre.
+- Le jeu de données est déséquilibré avec une répartition de 90% pour la classe 0 et 10% pour l'autre.
 - taille : 105Mo
 - Target codée en {0,1} en proportion 90-10
 
 ### Prérequis
-Avant de commencer, assurez-vous d'avoir les librairies Python suivantes installées sur votre environnement :
+Environnement utilisé :     
 
-Python 3
-scikit-learn
-matplotlib
-cuml
-XGBoost
-time
-numpy
+Python 3     
+scikit-learn     
+matplotlib      
+cuml      
+XGBoost     
+time     
+numpy     
 
 
 ### Plan
-Le projet suit le plan suivant :
 
 1. Importation des librairies nécessaires à l'utilisation des GPU
 2. Sélection des variables par arbre de décisions
