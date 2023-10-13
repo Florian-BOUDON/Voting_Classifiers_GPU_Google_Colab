@@ -1,4 +1,4 @@
-# Voting Classifiers with GPU on Google Colab
+# Voting Classifiers avec GPU dans Google Colab
 
 ### Présentation du projet
 
